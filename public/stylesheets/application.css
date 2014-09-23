@@ -1307,3 +1307,16 @@ aside .page-navigation-closed {
 
 .gbutton-link:focus {
   outline: 3px solid #ffbf47; }
+
+
+.product-info {
+border-left: solid 5px #cce3fd;
+display: block;
+float: right;
+font-size: 0.9em;
+width: 60%;
+padding:0.5em;
+}
+.product-info strong {
+  font-weight: 700;
+}

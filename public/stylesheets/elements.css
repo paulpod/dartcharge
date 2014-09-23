@@ -645,25 +645,43 @@ table td {
 .disabled:focus {
   outline: none; }
 
-.button-get-started {
+.get-started .button {
   font-family: "nta", Arial, sans-serif;
   font-size: 24px;
   line-height: 1.25;
   font-weight: 400;
   text-transform: none;
   font-weight: 700;
-  background-image: url("/public/images/icon-pointer.png");
-  background-repeat: no-repeat;
+  line-height: 0.66667;
+  color: #FFF;
+  background-color: #00823b;
+  padding: 14px 41px 10px 16px;
+  background-image: url(https://assets.digital.cabinet-office.gov.uk/static/icon-pointer-063838cde108768e30b077e5303783fc.png);
   background-position: 100% 50%;
-  padding: 0.36842em 2.15789em 0.21053em 0.84211em; }
+  background-repeat: no-repeat;
+  margin-bottom: 0; }
   @media (max-width: 640px) {
-    .button-get-started {
+    .get-started .button {
       font-size: 20px;
       line-height: 1.2; } }
-  @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 20/10), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-    .button-get-started {
-      background-image: url("/public/images/icon-pointer-2x.png");
-      background-size: 30px 19px; } }
+.get-started .button:hover {
+  background-color: #006435; }
+.get-started .button:focus {
+  outline: 3px solid #ffbf47; }
+.get-started .destination {
+  font-family: "nta", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.42857;
+  font-weight: 400;
+  text-transform: none;
+  color: #2e3133;
+  display: block;
+  margin-top: 7px;
+  max-width: 182px; }
+  @media (max-width: 640px) {
+    .get-started .destination {
+      font-size: 12px;
+      line-height: 1.25; } }
 
 .button-link {
   font-family: "nta", Arial, sans-serif;
