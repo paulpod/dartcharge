@@ -1,0 +1,132 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/elements_head}}
+  
+  <script type="text/javascript" src="/public/javascripts/jquery-1.11.0.min.js"></script>
+  
+  <script type="text/javascript" src="/public/javascripts/application.js"></script>
+  
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_vmretain}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+
+<div id="global-header-bar">
+  <div class="inner-block">
+    <div class="header-bar"></div>
+  </div>
+</div>
+		
+	
+<main id="wrapper" role="main">
+  <div id="content">
+    <div class="inner-block">
+
+
+  		<a class="back-to-previous" href="transfer-start">Back <span class="visuallyhidden"> to the previous question</span></a>
+
+
+
+      <h1 class="heading-24">
+      Vehicle and registration
+      </h1>
+
+      <div>
+        <p>
+        <span class="car-reg">K331 VPM</span>
+        </p>
+
+        <p>
+        Ford Mondeo <br />
+        <!-- mileage here only if supplied -->
+        <!-- 128,378 miles -->
+        </p>
+      </div>
+
+
+
+      <h1 class="heading-24">
+      Provide your business details
+      
+
+      <!-- <h1 class="heading-24">No addresses found for that postcode</h1> -->
+
+
+
+
+      <form action="get" class="form">
+
+        <!-- Compound form controls -->
+
+        <fieldset>
+
+     
+
+          <div class="form-group form-group-compound">
+          <label class="form-label" for="address-line-1">Trader name</label>
+          <input type="text" class="form-control" id="trader-name" value="Prefilled Name">
+          </div>
+  			
+    			<br />
+  			
+          <div class="form-group form-group-compound">
+          <label class="form-label" for="trader-email">Trader email address</label>
+          <input type="text" class="form-control" id="trader-email" value="Prefilled@email.address">
+          
+          </div>
+  			
+          <br />
+
+          <br />
+
+          <div class="form-group">
+          <label class="form-label" for="address-postcode">Address</label>
+          <input type="text" class="form-control" id="address-line-1">
+          </div>
+
+          <br />
+
+          <div class="form-group">
+          <input type="text" class="form-control" id="address-line-2">
+          </div>
+
+          <br />
+
+          <div class="form-group">
+          <input type="text" class="form-control" id="address-line-3">
+          </div>
+
+          <div class="form-group">
+          <label class="form-label" for="address-postcode">Postcode</label>
+          <input type="text" class="form-control form-control-1-4" id="address-postcode" value="PRE FILL">
+          <p class="form-hint">E.g. PR2 8AE or PR28AE</p>
+          </div>
+
+        </fieldset>
+
+        <!-- Primary and secondary buttons -->
+
+        <fieldset>
+
+          <div class="form-group">
+          <a href="transfer-3-trader" class="button">Continue</a>
+          </form>
+
+          </div>
+
+        </fieldset>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+{{/content}}
+
+{{/govuk_template}}

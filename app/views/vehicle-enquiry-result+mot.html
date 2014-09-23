@@ -1,0 +1,210 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/elements_head}}
+  
+  <script type="text/javascript" src="/public/javascripts/jquery-1.11.0.min.js"></script>
+  
+  <script type="text/javascript" src="/public/javascripts/application.js"></script>
+  
+  
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript">
+    google.load("visualization", "1", {packages:["corechart"]});
+    google.setOnLoadCallback(drawChart);
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+        ['Year', 'Mileage'],
+        ['2002',  90567],
+        ['2003',  109254],
+	  ['2004',  119254],
+	  ['2005',  157422],
+	  ['2006',  169570],
+	  ['2007',  176480],
+	  ['2008',  178128],
+	  ['2009',  180007],
+	  ['2010',  181178],
+	  ['2011',  183018],
+	  ['2012',  186307],
+	  ['2013',  186318],
+	  ['2014',  186828],
+      ]);
+
+      var options = {
+        title: 'Recorded mileage',
+	    legend: { position: 'bottom' },
+		fontName: 'nta'
+      };
+
+      var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+
+      chart.draw(data, options);
+    }
+  </script>
+  
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_blank}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+
+
+<div id="global-header-bar">
+  <div class="inner-block">
+    <div class="header-bar"></div>
+  </div>
+</div>
+	
+	
+<main id="wrapper" role="main">
+  <div id="content">
+    <div class="inner-block">
+		
+	<a class="back-to-previous" href="transfer-4">Back <span class="visuallyhidden"> to the previous question</span></a>
+		
+		
+	<article>
+	
+	
+	<h1 class="heading-48">
+	Vehicle enquiry
+	</h1>
+	
+	<h2>
+	Registration number: <span class="car-reg">EAZ 115</span>
+	</h2>
+	  
+	  
+	<div class="isValidTax">
+	<h2>✔ Taxed</h2>
+	<p>Expires: 01 August 2015</p>
+	</div>
+
+
+	<div class="isValidMot">
+	<h2>✔ MOT</h2>
+	<p>Expires: 24 February 2015</p>
+	</div>
+
+
+	<h2 class="heading-24">Vehicle excise duty for this vehicle</h2>
+
+
+<ul class="ul-data">
+	<li><span>6 Month rate</span><strong>£126.50</strong></li>
+		
+	<li><span>12 Month rate</span><strong>£230.00</strong></li>
+
+</ul>
+
+
+<h2 class="heading-24">Vehicle details</h2>
+	
+	
+	
+<ul class="ul-data">
+	<li><span>Vehicle make</span><strong>TOYOTA</strong></li>
+	
+	<li><span>Date of first registration</span><strong>20 August 1997</strong></li>
+	
+	<li><span>Year of manufacture</span><strong>1997</strong></li>
+	
+	<li><span>Cylinder capacity (cc)</span><strong>2982cc</strong></li>
+	
+	<li><span>CO₂Emissions</span><strong>Not available</strong></li>
+	
+	<li><span>Fuel type</span><strong>HEAVY OIL</strong></li>
+	
+	<li><span>Export marker</span><strong>No</strong></li>
+	
+	<li><span>Vehicle status</span><strong>Tax not due</strong></li>
+	
+	<li><span>Vehicle colour</span><strong>GREEN</strong></li>
+	
+	<li><span>Vehicle type approval</span><strong>Not available</strong></li>
+	
+</ul>
+
+
+	<p class="grid-2-3">
+	Please be aware that if you have taxed, made a SORN or had an MOT in the last 5 days these details may not have updated.
+	</p>
+	
+	
+
+	<details>
+	<summary role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true"><span class="summary">Are these details on the vehicle record are incorrect?</span></summary>
+	<div class="panel-indent" id="details-content-0" aria-hidden="false" style="display: block;">
+    <h2 class="visuallyhidden">Help with corrections to vehicle records</h2>
+	<p>
+	CCG<br>
+	DVLA<br>
+	Swansea<br>
+	SA99 1BA
+	</p>
+
+	<p>
+	Please include the incorrect V5C registration certificate for amendment.
+	</p>
+	</div>
+	</details>
+	
+	
+	
+	<div style="padding-top:2em">
+	<h2 class="heading-24">MOT History</h2>
+	</div>
+	
+
+	<ul class="ul-data">
+		<li class="mot-pass">Certificate issued (Pass)</li>
+		<li><span>Date of test</span><strong>25/02/2014</strong></li>
+		<li><span>Odometer reading</span><strong>186,828 Miles</strong></li>
+		<li><span>Test number</span><strong>149946854486</strong></li>
+		<li><span>Test expiry date</span><strong>24/02/2015</strong></li>
+	</ul>
+	
+	
+	
+
+
+	<div>
+	<a href="vehicle-enquiry-result+mot-full" class="toggle toggle-closed">Show full test history (2002 to 2014)</a>
+	</div>
+	
+	
+	
+	
+	
+		
+</article>		
+
+
+<form action="get" class="form">
+	<fieldset>
+		<div style="float:left;padding-right:1em">
+		  <input type="submit" class="button" value="Finish">
+		</div>
+	  
+
+		<div>
+		  <p><a href="transfer-3">
+			Search for another vehicle
+		</a></p>
+		</div>
+
+	</fieldset>
+</form>
+                    
+                
+
+    </div>
+  </div>
+</main>
+{{/content}}
+
+{{/govuk_template}}

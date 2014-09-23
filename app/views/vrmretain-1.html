@@ -1,0 +1,129 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/elements_head}}
+  
+  <script type="text/javascript" src="/public/javascripts/jquery-1.11.0.min.js"></script>
+  
+  <script type="text/javascript" src="/public/javascripts/application.js"></script>
+  
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_vmretain}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+
+<div id="global-header-bar">
+  <div class="inner-block">
+    <div class="header-bar"></div>
+  </div>
+</div>
+		
+	
+<main id="wrapper" role="main">
+  <div id="content">
+    <div class="inner-block">
+
+
+		<a class="back-to-previous" href="transfer-2">Back <span class="visuallyhidden"> to the previous question</span></a>
+
+        <h1 class="heading-24">
+          Find the vehicle 
+        </h1>
+		
+
+        <form action="get" class="form">
+
+
+          <!-- Compound form controls -->
+
+          <fieldset>
+
+       
+
+             <div class="form-group form-group-compound">
+              <label class="form-label" for="vehicle-registration-1">Vehicle registration number</label>
+              <input type="text" class="form-control" id="vehicle-reg">
+			  <p class="form-hint">E.g. K331 VPM or BD51 SMR</p>
+            </div>
+			
+			<br />
+
+
+            <div class="form-group">
+              <label class="form-label" for="v5c-ref">Latest V5C document reference number</label>
+              <input type="text" class="form-control" id="v5c-ref">
+			   <p class="form-hint">11 digits long E.g. 2043 367 8895</p>
+			   
+			   
+			   
+	   			<details>
+	   			<summary role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true"><span class="summary">Trouble finding the V5C reference number?</span></summary>
+	   			<div class="panel-indent" id="details-content-0" aria-hidden="false" style="display: block;margin-bottom:0">
+	   		    <h2 class="visuallyhidden">Help finding the V5C reference number</h2>
+	   			<p style="float:left;width:40%;padding-right:0.5em">The V5C, sometimes known as a Logbook, is a multicoloured document used for transferring ownship of a car and registration. The reference number is printed on the right hand side, halfway down, under the solid red area.
+	   			</p>
+
+	   			
+	   			<img src="/public/images/v5c.png" width="304" height="199" alt="V5C Logbook reference number diagram">
+	   			
+	   			</div>
+	   			</details>
+			   
+			   
+            </div>
+			
+			
+          <div class="form-group">
+            <label class="form-label" for="address-postcode">Registered keeper's postcode</label>
+            <input type="text" class="form-control form-control-1-4" id="address-postcode">
+		   <p class="form-hint">E.g. PR2 8AE or PR28AE</p>
+          </div>
+		  
+		  
+		  
+		  
+		  <fieldset class="">
+                <p>Are you the registered keeper?</p>
+
+                <label for="radio-inline-1" class="block-label">
+                  <input id="radio-inline-1" type="radio" name="radio-inline-group" value="Yes">
+                  Yes
+                </label>
+                <label for="radio-inline-2" class="block-label">
+                  <input id="radio-inline-2" type="radio" name="radio-inline-group" value="No">
+                  No, but I have consent to act on their behalf
+                </label>
+          </fieldset>
+		  
+		  
+		  </fieldset>
+		  
+		  
+		  
+
+          <fieldset>
+
+       
+
+           
+            <div class="form-group" style="padding-top:2em">
+				<a href="vmretain-2-trader" class="button">Next</a>
+              <!-- <input type="submit" class="button" value="Next"> -->
+
+            </div>
+
+          </fieldset>
+
+        </form>
+
+    </div>
+  </div>
+</main>
+{{/content}}
+
+{{/govuk_template}}

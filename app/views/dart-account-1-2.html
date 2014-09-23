@@ -1,0 +1,118 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/elements_head}}
+  
+ 
+  
+  <script type="text/javascript" src="/public/javascripts/jquery-1.11.0.min.js"></script>
+  
+  <script type="text/javascript" src="/public/javascripts/application.js"></script>
+  
+  <script  type="text/javascript" src="/public/javascripts/Chart.js"></script>
+  
+  
+ 
+
+  
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_blank}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+
+
+<div id="global-header-bar">
+  <div class="inner-block">
+    <div class="header-bar"></div>
+  </div>
+</div>
+	
+	
+<main id="wrapper" role="main">
+  <div id="content">
+    <div class="inner-block">
+		
+		
+		
+	<article>
+	
+	
+	<h1 class="heading-36">
+	<img src="/public/images/cc-logo-50x50.png" height="48px" width="48px" align="top" style="margin-top:-5px;margin-right:10px"> Setting up a local account
+	</h1>
+
+
+	<div class="grid grid-2-3" style="margin-right:1.5em">
+
+
+	<form action="get" class="form">
+
+	<fieldset>
+		 <p>You will need to upload documents to prove your status as a local at the end of this process. You will need a council tax bill, a utility bill and the V5C (log book) for the vehicles you register.</p>
+
+
+            <div class="form-group">
+              <label class="form-label" for="address-postcode">Postcode</label>
+              <input type="text" class="form-control form-control-1-4" id="address-postcode">
+			   <!-- <p class="form-hint">E.g. PR2 8AE or PR28AE</p> -->
+            </div>
+
+
+
+
+            <div class="form-group">
+				<a href="transfer-2" class="button">Find address</a>
+					<!-- <input type="submit" class="button" value="Find addess"> -->
+				</form>
+
+            </div>
+
+
+
+	</fieldset>
+
+
+
+
+	</form>
+
+
+	</div>
+
+
+	<div>
+
+	<h2 class="heading-19">More about Dart Charge accounts</h2>
+
+	<ul style="line-height:1.6">
+	<li><a href="#">Local accounts</a></li>
+	<li><a href="#">Personal accounts</a></li>
+		<li><a href="#">Company accounts</a></li>
+
+	<li><a href="#">How to pay</a></li>
+
+	<li><a href="#">If you have a Dart-Tag account</a></li>
+	</ul>
+
+	</div>
+
+
+		
+
+
+	</article>
+
+
+
+
+    </div>
+  </div>
+</main>
+{{/content}}
+
+{{/govuk_template}}

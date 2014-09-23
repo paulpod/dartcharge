@@ -1,0 +1,129 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/elements_head}}
+  
+  <script type="text/javascript" src="/public/javascripts/jquery-1.11.0.min.js"></script>
+  
+  <script type="text/javascript" src="/public/javascripts/application.js"></script>
+  
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_vmretain}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+
+<div id="global-header-bar">
+  <div class="inner-block">
+    <div class="header-bar"></div>
+  </div>
+</div>
+		
+	
+<main id="wrapper" role="main">
+  <div id="content">
+    <div class="inner-block">
+
+
+  		<a class="back-to-previous" href="transfer-start">Back <span class="visuallyhidden"> to the previous question</span></a>
+
+
+
+      <h1 class="heading-24">
+      Vehicle and registration
+      </h1>
+
+      <div>
+        <p>
+        <span class="car-reg">K331 VPM</span>
+        </p>
+
+        <p>
+        Ford Mondeo <br />
+        <!-- mileage here only if supplied -->
+        <!-- 128,378 miles -->
+        </p>
+      </div>
+
+
+
+      <h1 class="heading-24">
+      Check details
+      </h1>
+
+      <p>Please ensure these details are correct as documents will be sent to the keeper at the following address
+
+
+      <form action="get" class="form">
+
+        <!-- Compound form controls -->
+
+        <fieldset>
+
+          <p>
+          <span style="font-weight:bold">Dave Richards</span> <br />
+          Ty Newydd Farm <br />
+          Pontyberem, Llanelli <br />
+          Carmarthenshire <br />
+          SA15 5LP
+          </p>
+
+          <div class="form-group form-group-compound">
+          <label class="form-label" for="keeper-email">Keeper email address</label>
+          <input type="text" class="form-control" id="trader-email">
+          <p class="form-hint">We'll email a copy of the receipt to the keeper at this address</p>
+          </div>
+
+        </fieldset>
+
+
+
+
+        <fieldset>
+
+          <p>
+          <span style="font-weight:bold">Bob Bobson</span> <br />
+          bob.bobson@bobsmotors-swansea.co.uk <br />
+          </p>
+
+          <p>
+          <span style="font-weight:bold">Bob's Motors</span> <br />
+          Unit 64<br />
+          Everglades Business Park<br />
+          Swansea <br />
+          SA3 7AB
+          </p>
+
+         
+
+        </fieldset>
+
+
+
+
+
+        <!-- Primary and secondary buttons -->
+
+        <fieldset>
+
+          <div class="form-group">
+          <a href="transfer-2" class="button">Confirm and complete</a>
+          <!-- <input type="submit" class="button" value="Find addess"> -->
+          </form>
+
+          </div>
+
+        </fieldset>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+{{/content}}
+
+{{/govuk_template}}

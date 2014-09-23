@@ -1,0 +1,169 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/elements_head}}
+  
+  <script type="text/javascript" src="/public/javascripts/jquery-1.11.0.min.js"></script>
+  
+  <script type="text/javascript" src="/public/javascripts/application.js"></script>
+  
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_navigation}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+
+
+<div id="global-header-bar">
+  <div class="inner-block">
+    <div class="header-bar"></div>
+  </div>
+</div>
+	
+	
+<main id="wrapper" role="main">
+  <div id="content">
+    <div class="inner-block">
+		
+		<a class="back-to-previous" href="transfer-3">Back <span class="visuallyhidden"> to the previous question</span></a>
+		
+		  <fieldset>
+	          <div class="validation-summary" style="margin-top:1em">Sale not confirmed - check the declarations below</div>
+			  
+			  
+	          <h1 class="heading-24">
+	            Vehicle being sold
+	          </h1>
+			  
+			  
+			  <p>
+				  <span class="x">Ford Mondeo</span>
+			  </p>
+			  
+			  <p>
+				  <span class="car-reg">K331 VPM</span>
+			  </p>
+			  
+			 
+			  
+			  
+               <div class="form-group form-group-compound">
+                <label class="form-label" for="mileage">Mileage</label>
+                <input type="text" class="form-control form-control-1-4" value="optional" id="mileage">
+              </div>
+		
+		</fieldset>
+			  
+			  <fieldset>
+			  
+			  
+          <h1 class="heading-24">
+            Vehicle will be transferred to
+          </h1>
+		
+		
+  		
+  		<p>
+  			<span class="details">bob's motors</span><br />
+		
+  			<span class="x">
+				Ty Newydd Farm <br />
+				Pontyberem, Llanelli <br />
+				Carmarthenshire <br />
+				SA15 5LP
+			</span>
+  		</p>
+		  </fieldset>
+		  
+		  
+		  
+		  <fieldset class="validate inline-fields" data-validation-name="dateOfBirthDate" data-validation-type="fieldset" data-validation-rules="allNonEmpty" data-validation-children="day month year">
+			  
+	          <h1 class="heading-24">
+	            Date of sale
+	          </h1>
+
+		        <span class="day field-wrapper">
+		          <label for="dob_dob_day" class="">
+		              Day
+		          </label>
+		          <input type="number" id="dob_dob_day" name="dob.dob.day" value="01" autocomplete="off" class="text  day validate " data-validation-name="day" data-validation-type="field" data-validation-rules="nonEmpty">
+		        </span>
+
+		        <span class="month field-wrapper">
+		          <label for="dob_dob_month" class="">
+		              Month
+		          </label>
+		          <input type="number" id="dob_dob_month" name="dob.dob.month" value="09" autocomplete="off" class="text  month validate " data-validation-name="month" data-validation-type="field" data-validation-rules="nonEmpty">
+		        </span>
+
+		        <span class="year field-wrapper">
+		          <label for="dob_dob_year" class="">
+		              Year
+		          </label>
+		          <input type="number" id="dob_dob_year" name="dob.dob.year" value="2014" autocomplete="off" class="text  year text validate " data-validation-name="year" data-validation-type="field" data-validation-rules="nonEmpty">
+		        </span>
+
+		          <p class="form-hint">For example: <span class="date">31 3 2014</span></p>
+		      </fieldset>
+		  
+		  
+		  
+		
+
+        <form action="get" class="form">
+
+
+          <!-- Compound form controls -->
+		  
+	       <div class="grid grid-2-3">
+
+          <fieldset>
+		  <p></p>
+		  <p></p>
+          <label for="radio-inline-1" class="block-label block-error">
+            <input id="radio-inline-1" type="checkbox" name="radio-inline-group" value="Yes">
+            I have the consent of the current keeper to notify the sale of this vehicle
+          </label>
+          <label for="radio-inline-2" class="block-label block-error">
+            <input id="radio-inline-2" type="checkbox" name="radio-inline-group" value="No">
+            I confirm that the current keeper understands that the registration number will be lost on the sale of this vehicle
+          </label>
+	  
+		  
+		  </fieldset>
+	  
+	  </div>
+		  
+		  
+		  
+		  
+		  
+		  
+		  
+
+          <fieldset>
+
+       
+
+           
+            <div class="form-group">
+				<a href="transfer-5" class="button">Transfer vehicle</a>
+              <!-- <input type="submit" class="button" value="Confirm"> -->
+
+            </div>
+
+          </fieldset>
+
+        </form>
+
+    </div>
+  </div>
+</main>
+{{/content}}
+
+{{/govuk_template}}

@@ -1,0 +1,126 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/elements_head}}
+  
+  <script type="text/javascript" src="/public/javascripts/jquery-1.11.0.min.js"></script>
+  
+  <script type="text/javascript" src="/public/javascripts/application.js"></script>
+  
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_navigation}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+
+
+<div id="global-header-bar">
+  <div class="inner-block">
+    <div class="header-bar"></div>
+  </div>
+</div>
+	
+	
+<main id="wrapper" role="main">
+  <div id="content">
+    <div class="inner-block">
+		
+		<a class="back-to-previous" href="transfer-4">Back <span class="visuallyhidden"> to the previous question</span></a>
+		
+
+
+	<fieldset>
+
+		<h1 class="heading-24">
+		Please <a href=#>print this page</a> and pass to the customer
+		</h1>
+
+		
+		</fieldset>
+
+
+
+    <div class="grid-wrapper" style="padding-left:0px">
+        <div class="grid grid-2-3">
+          <div class="inner-block" style="padding-left:0px">
+			
+   		<div class="complete-box">
+   		<p>Thank you – the application is being processed</p>
+
+   		<p>The transaction ID is K331VPM-12345678933</p>
+
+   		<p style="font-weight:bold;font-size:21px">Please do not send the original V5C/3 (disposal slip) to DVLA</p>
+
+   		</div>
+
+  		 <p>A letter will be sent to the name and address on the V5C within 4 weeks. If they do not receive a letter in this time they must contact DVLA Customer Enquiries on 0300 790 6802 as they could still be liable for this vehicle.</p>
+		 
+		 <p>DVLA will automatically issue a refund for any full remaining months of vehicle tax and cancel any direct debits (DD). The refund will be sent to the address on the V5C.</p>
+		 
+          
+		  
+          </div>
+     
+      </div>
+      <div class="grid grid-1-3">
+        <div class="inner-block">
+			
+
+		  <div style="font-size:1.2em;padding-top:4px">
+		  <p>
+		  <span class="car-reg">K331 VPM</span>
+	  </p>
+	  <p>
+		  Ford Mondeo <br />
+		  <!-- mileage here only if supplied -->
+		  128,378 miles
+		  </p>
+
+	  
+		  <p>
+		  Sold on <span>1/9/2014</span> to: </p>
+		  
+		  <p>
+		  <span style="font-weight:bold">Bob's Motors</span> <br />
+		  Ty Newydd Farm <br />
+		  Pontyberem, Llanelli <br />
+		  Carmarthenshire <br />
+		  SA15 5LP
+		  </span>
+		  </p>
+
+		  </div>
+		 
+
+        </div>
+    </div>
+
+
+
+	<form action="get" class="form">
+		<fieldset>
+			<div style="float:left;padding-right:1em">
+			  <input type="submit" class="button" value="Finish">
+			</div>
+		  
+
+			<div>
+			  <p><a href="transfer-3">
+				Sell another vehicle
+			</a></p>
+			</div>
+  
+		</fieldset>
+	</form>
+
+
+    </div>
+  </div>
+</main>
+{{/content}}
+
+{{/govuk_template}}
