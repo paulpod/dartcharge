@@ -9,7 +9,16 @@
   
   <script type="text/javascript" src="/public/javascripts/application.js"></script>
   
-  
+  <script src="/public/javascripts/jquery.validate.js"></script>
+  <script src="/public/javascripts/jquery.unobtrusive-ajax.js"></script>
+  <script src="/public/javascripts/jquery.validate.unobtrusive.js"></script>
+
+  <script src="/public/javascripts/CustomValidation.js"></script>
+
+  <script src="/public/javascripts/NumberFix.js"></script>
+
+<script src="/public/javascripts/UserFeedback.js"></script>
+
   
  
 
@@ -34,72 +43,54 @@
 	
 <div id="wrapper" role="main">
         <div id="content">
-            <div class="inner-block">
-    <div class="phase-banner">
-        <p>
-            <strong class="phase-tag">ALPHA</strong>
-            <span>This is a new service – your <a href="mailto:webfeedback@sanefoperations.co.uk?Subject=Dart Charge Website Feedback">feedback</a> will help us to improve it. <a href="https://www.gov.uk/service-manual/phases/alpha">Find out more</a></span>
-        </p>
-    </div>
-</div>
+            
 
-            <div id="global-breadcrumb" class="header-context">
-                <nav role="navigation">
-                    <ol class="group">
-                        
-    <li>
 
-        <a href="/" title="Home">Home</a>
-     </li>
-    <li>
+            <h1 class="heading-36">
+            <img src="/public/images/cc-logo-50x50.png" height="48px" width="48px" align="top" style="margin-top:-5px;margin-right:10px"> Dart Charge for local residents
+            </h1>
 
-    Local resident account
-     </li>
-
-                    </ol>
-                </nav>
-            </div>
-            <header class="page-header group">
-                <div id="secondary-logo" class="hgroup">
-                    <img src="/Content/Images/congestion_charge_logo_50x50.png">
-                    <h1 class="text">Dart Charge</h1>
-                </div>
-            </header>
+            
             <script src="/public/javascripts/jqueryui"></script>
-    <link href="/public/javascripts/jquery-ui.css" rel="stylesheet">       
+    <link href="/public/stylesheets/jquery-ui.css" rel="stylesheet">       
 
 
 <div class="linesDiv2"></div>
 
     <div class="guiding-text">
-        <!-- <p>
-            You have chosen the  limited Local Resident’s Discount Scheme which costs £10 per year 
-        for the first 50 trips. After those trip additional ones cost £0.20p and you can provide 
-        payment details for this below. We  will tell you when you have 5 trips remaining from your £10.
+        <p>
+        You have chosen the limited Local Resident’s Discount Scheme which costs £10 per year 
+        for the first 50 trips. After those trip additional ones cost £0.20p.</p>
+
+        <p>We  will tell you when you have 5 trips remaining from your £10.
         If you make more than 100 trips per year you should  consider the unlimited option.
-        </p> -->
+        </p>
     </div>
 
-<header class="page-header group">
-    <div>
-        <h1>Local resident account</h1>
-    </div>
-</header>
+
+    <h1 class="heading-24">Open an account for a Limited Local Resident's discount scheme</h1>
+    
+
 
 <article class="article-container group signup-first" role="form">
 
-<form action="/Registration/RegisterLocalResident" enctype="multipart/form-data" method="post" novalidate="novalidate"><input name="__RequestVerificationToken" type="hidden" value="8gkSqezFYd-ohdlRKXS8YQaugOBjqXOu3IrMyc6SjeLR9YTxX9ZHibpW7wNJi80RWsUZRG9YsUOrNjhZGsei__xY5kV_wb55kHS9lC8MPXrxfz4xtOpiFAwchZYp12FK2Nfe3GwH09VdEw08dBAKmhwzC9xErBzqms8fVUkA3vc1">        <div class="registerSectionCustomPushRightLabel">
+<!-- <form action="/Registration/RegisterLocalResident" enctype="multipart/form-data" method="post" novalidate="novalidate"><input name="__RequestVerificationToken" type="hidden" value="8gkSqezFYd-ohdlRKXS8YQaugOBjqXOu3IrMyc6SjeLR9YTxX9ZHibpW7wNJi80RWsUZRG9YsUOrNjhZGsei__xY5kV_wb55kHS9lC8MPXrxfz4xtOpiFAwchZYp12FK2Nfe3GwH09VdEw08dBAKmhwzC9xErBzqms8fVUkA3vc1"> -->
+
+
+<!-- <div class="registerSectionCustomPushRightLabel">
 <div class="validation-summary-valid" data-valmsg-summary="true"><h1>There was a problem submitting the form</h1><p>Please try the following:</p><ul><li style="display:none"></li>
 </ul></div>
 <script type="text/javascript">
     $('.validation-summary-errors ul, .validation-summary-valid ul').before('<h1>There was a problem submitting the form</h1><p>Please try the following:</p>');
-</script>
+</script> -->
+
+
 
             <fieldset id="details" class="read-only">
                 <legend></legend>
                 <input data-val="true" data-val-required="The Scheme selection field is required." id="SchemeSelection" name="SchemeSelection" type="hidden" value="True">
 
-                <div class="input form-group">
+                <!-- <div class="input form-group">
                     <label class="dropdownlabel" for="SalutationId">Title</label>
                     <select class="dropdown" data-val="true" data-val-number="The field Title must be a number." id="Salutation" name="SalutationId" style="margin-left: 0em;"><option value="1">Mr.</option>
 <option value="2">Mrs.</option>
@@ -110,7 +101,7 @@
 <option value="7">Other</option>
 </select>
                     <input class="textbox_input" id="SalutationText" name="Salutation" type="text" value="" style="display: none;">
-                </div>
+                </div> -->
 
                 <div class="input form-group">
                     <span class="field-validation-valid" data-valmsg-for="FirstName" data-valmsg-replace="true"></span>
@@ -124,13 +115,13 @@
                     <input autocomplete="off" class="textbox_input" data-val="true" data-val-regex="Only letters are accepted" data-val-regex-pattern="[^0-9,;:\.!#\$%&amp;\/\(\)=\?\*\+_&lt;&gt;]+$" data-val-required="Last name is required." id="LastName" name="LastName" type="text" value="">
                 </div>
 
-                <div id="companyNameHidableDiv">
+                <!-- <div id="companyNameHidableDiv">
                     <div id="CompanyName" class="input">
                         <span class="field-validation-valid" data-valmsg-for="CompanyName" data-valmsg-replace="true"></span>
                         <label for="CompanyName">Company name</label>
                         <input class="textbox_input" id="CompanyName" name="CompanyName" type="text" value="">
                     </div>
-                </div>
+                </div> -->
 
                 <div class="input form-group">
                     <span class="field-validation-valid" data-valmsg-for="DayTimePhone" data-valmsg-replace="true"></span>
@@ -140,13 +131,13 @@
                     <input autocomplete="off" class="textbox_input" data-val="true" data-val-regex="Day time phone format is invalid." data-val-regex-pattern="^\+?[0-9]{9,15}$" data-val-required="Phone is required." id="DayTimePhone" name="DayTimePhone" type="text" value="">
                 </div>
 
-                <div class="input form-group">
+                <!-- <div class="input form-group">
                     <span class="field-validation-valid" data-valmsg-for="MobilePhone" data-valmsg-replace="true"></span>
-                    <label class="label-required" for="MobilePhone">Mobile</label>
+                    <label class="label-required" for="MobilePhone">Mobile</label> -->
                     
                     
-                    <input autocomplete="off" class="textbox_input" data-val="true" data-val-regex="Mobile phone format is invalid." data-val-regex-pattern="^\+?[0-9]{9,15}$" id="MobilePhone" name="MobilePhone" type="text" value="">
-                </div>
+                    <!-- <input autocomplete="off" class="textbox_input" data-val="true" data-val-regex="Mobile phone format is invalid." data-val-regex-pattern="^\+?[0-9]{9,15}$" id="MobilePhone" name="MobilePhone" type="text" value="">
+                </div> -->
 
                 <div class="input form-group">
                     <span class="field-validation-valid" data-valmsg-for="EmailAddress" data-valmsg-replace="true"></span>
@@ -154,13 +145,13 @@
                     <input autocomplete="off" class="email textbox_input" data-val="true" data-val-regex="Email format is invalid" data-val-regex-pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" data-val-required="Email is required." id="EmailAddress" name="EmailAddress" oncopy="return false" onpaste="return false" type="text" value="">
                 </div>
 
-                <div class="input form-group">
+                <!-- <div class="input form-group">
                     <span class="field-validation-valid" data-valmsg-for="EmailAddressConfirm" data-valmsg-replace="true"></span>
                     <label class="label-required" for="EmailAddressConfirm">Email confirmation</label>
                     <input autocomplete="off" class="emailconfirm textbox_input" data-val="true" data-val-equalto="The email and confirmation email do not match." data-val-equalto-other="*.EmailAddress" data-val-regex="Email format is invalid" data-val-regex-pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" data-val-required="Email confirmation is required." id="EmailAddressConfirm" name="EmailAddressConfirm" oncopy="return false" onpaste="return false" type="text" value="">
-                </div>
+                </div> -->
 
-                <div class="input form-group">
+                <div class="input form-group validation">
                     <span class="field-validation-valid" data-valmsg-for="UserPassword" data-valmsg-replace="true"></span>
                     <label class="label-required" for="UserPassword">Password</label>
                     <p class="smallCustom">
@@ -657,7 +648,7 @@
         </div>
 </form></article>
 
-<script src="/Scripts/dart-register.js"></script>
+<script src="/public/javascripts/dart-register.js"></script>
 
 
 <script type="text/javascript">
@@ -671,25 +662,7 @@
     $(document).ready(function () {   $('#EveningPhone').keypress(OnlyNumbers);  });
 </script>
 
-            <p class="report-a-problem-toggle">
-                <a href="#feedbackPartialView" id="linkID">Is there anything wrong with this page?</a>
-            </p>
-            <div id="feedbackPartialView" class="report-a-problem-container" style="display: none;">
-
-<div class="user_feedback">
-    
-    <h2>
-        Help us improve GOV.UK
-    </h2>
-
-<form action="/Registration/RegisterLocalResident?Option=OptionA" method="post" novalidate="novalidate">        <p>
-            Please don't include any personal or financial information, for example your National Insurance or credit card numbers.
-        </p>
-<label class="label-required" for="ActionDesctription">What you were doing</label><input data-val="true" data-val-required="This field is mandatory." id="ActionDesctription" name="ActionDesctription" type="text" value=""><label class="label-required" for="ErrorDescription">What went wrong</label><input data-val="true" data-val-required="This field is mandatory." id="ErrorDescription" name="ErrorDescription" type="text" value="">        <div>
-            <input type="submit" id="btnAjax" class="button" name="Submit" value="Submit">
-        </div>
-</form></div>
-            </div>
+            
         </div>
     </div>
 

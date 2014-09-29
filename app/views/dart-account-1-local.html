@@ -1,0 +1,136 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/elements_head}}
+  
+ 
+  
+  <script type="text/javascript" src="/public/javascripts/jquery-1.11.0.min.js"></script>
+  
+  <script type="text/javascript" src="/public/javascripts/application.js"></script>
+  
+  <script  type="text/javascript" src="/public/javascripts/Chart.js"></script>
+  
+  
+ 
+
+  
+{{/head}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_blank}}
+{{/propositionHeader}}
+
+{{$headerClass}}with-proposition{{/headerClass}}
+
+{{$content}}
+
+
+<div id="global-header-bar">
+  <div class="inner-block">
+    <div class="header-bar"></div>
+  </div>
+</div>
+	
+	
+<main id="wrapper" role="main">
+  <div id="content">
+    <div class="inner-block">
+		
+		
+		
+	<article>
+	
+	
+	<h1 class="heading-36">
+	<img src="/public/images/cc-logo-50x50.png" height="48px" width="48px" align="top" style="margin-top:-5px;margin-right:10px"> Setting up a local account
+	</h1>
+
+
+	<div class="grid grid-2-3" style="margin-right:1.5em">
+
+
+	<form method="get" action="local-type" class="form">
+
+	
+		 <!-- <p>You will need to upload documents to prove your status as a local at the end of this process. You will need a council tax bill, a utility bill and the V5C (log book) for the vehicles you register.</p> -->
+
+		 <h2 class="heading-24">Choose one of the Local schemes</h2>
+
+		 <h2 class="heading-19">The limited Local Resident’s Discount Scheme</h2>
+
+		 <p>Costs £10 per year for the first 50 trips. After those trip additional ones cost £0.20p and you can provide payment details for this below. We will tell you when you have 5 trips remaining from your £10. </p>
+
+		
+		 <h2 class="heading-19">The unlimited Local Resident’s Scheme</h2>
+
+		 <p>The unlimited Local Resident’s Discount Scheme costs £20 per year for unlimited trips.</p>
+
+
+		<fieldset style="padding-top:1.5em">
+
+		 <label for="radio-inline-1" class="block-label">
+		<input id="radio-inline-1" type="radio" name="Option" value="OptionA">
+		Limited
+		</label>
+
+		<div class="product-info">
+		If you make <strong>less than 100</strong> trips per year you should consider the limited option.
+		</div>
+
+
+
+		<label for="radio-inline-2" class="block-label">
+		<input id="radio-inline-2" type="radio" name="Option" value="OptionB">
+		Unlimited
+		</label>
+
+		<div class="product-info">
+		If you make <strong>more than 100</strong> trips per year you should consider the unlimited option.
+		</div>
+
+		
+		<div class="form-group" style="padding-top:1.5em">
+		<!-- <a href="https://test.dart-charge.co.uk/Registration/RegisterLocalResident" class="button">Next</a> -->
+		<input type="submit" class="button" value="Next">
+		</div>
+
+		</fieldset>
+
+		</form>
+
+
+	</div>
+
+
+	<div>
+
+	<h2 class="heading-19">More about Dart Charge accounts</h2>
+
+	<ul style="line-height:1.6">
+	<li><a href="#">Local accounts</a></li>
+	<li><a href="#">Personal accounts</a></li>
+		<li><a href="#">Company accounts</a></li>
+
+	<li><a href="#">How to pay</a></li>
+
+	<li><a href="#">If you have a Dart-Tag account</a></li>
+	</ul>
+
+	</div>
+
+
+		
+
+
+	</article>
+
+
+
+
+    </div>
+  </div>
+</main>
+{{/content}}
+
+{{/govuk_template}}

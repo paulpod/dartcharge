@@ -1316,6 +1316,10 @@ float: right;
 font-size: 0.9em;
 width: 60%;
 padding:0.5em;
+@media (max-width: 640px) {
+    .product-info {
+      float:none;
+      width:100%; } }
 }
 .product-info strong {
   font-weight: 700;
