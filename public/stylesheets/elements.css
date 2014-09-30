@@ -510,8 +510,7 @@ fieldset, legend {
   cursor: pointer; }
   @media (min-width: 641px) {
     .block-label {
-      float: left; } 
-    }
+      float: left; } }
 
 .block-error {
   background: #fef7f7;

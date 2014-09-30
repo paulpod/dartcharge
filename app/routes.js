@@ -19,17 +19,12 @@ module.exports = {
       res.render('examples/alpha/alpha', {'assetPath' : assetPath });    
     });
 
-    var quotes = [
-  { author : 'Audrey Hepburn', text : "Nothing is impossible, the word itself says 'I'm possible'!"},
-  { author : 'Walt Disney', text : "You may not realize it when it happens, but a kick in the teeth may be the best thing in the world for you"},
-  { author : 'Unknown', text : "Even the greatest was once a beginner. Don't be afraid to take that first step."},
-  { author : 'Neale Donald Walsch', text : "You are afraid to die, and you're afraid to live. What a way to exist."}
-];
-
+    
     app.get('/local-type', function (req, res) {
       var o = req.query.Option;
       
-      res.render('local-type-' + o, {'assetPath' : assetPath });
+      //res.render('local-type-' + o, {'assetPath' : assetPath });
+      res.redirect('https://test.dart-charge.co.uk/Registration/RegisterLocalResident?option=' + o);
 
       //res.send('Local Account Type: ' + o);  
     });
