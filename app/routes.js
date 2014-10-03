@@ -26,7 +26,6 @@ module.exports = {
       //res.render('local-type-' + o, {'assetPath' : assetPath });
       res.redirect('https://test.dart-charge.co.uk/Registration/RegisterLocalResident?option=' + o);
 
-      //res.send('Local Account Type: ' + o);  
     });
 
 
