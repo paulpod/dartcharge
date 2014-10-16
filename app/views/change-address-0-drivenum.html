@@ -36,9 +36,11 @@
 <main id="wrapper" role="main">
   <div id="content">
     <div class="inner-block">
-		
-	<a class="back-to-previous" href="change-address-2">Back <span class="visuallyhidden"> to the previous question</span></a>
 
+    		<a class="back-to-previous" href="#">Back<span class="visuallyhidden"> to your driving licence</span></a>
+
+		
+		
 		
 	<article>
 	
@@ -75,47 +77,42 @@
     
    
     
-    <h2 class="heading-19">Old address</h2>
-
-    <p>
-    Ty Newydd Farm,<br />
-    Pontyberem<br />
-    LLANELLI<br />
-    SA15 5LP</p>
-
-	</div>
-
-
+    
 	<!-- end #your-details -->
 
 
 
 
-	<form method="get" action="change-time" class="form">
-
 	<fieldset>
-		<p>Have you been at this address for 3 years or longer?</p>
-		<p></p>
 
-		<label for="radio-inline-1" class="block-label">
-		<input id="radio-inline-1" type="radio"  name="time" value="yes">
-		Yes
-		</label>
-
-
-		<label for="radio-inline-2" class="block-label">
-		<input id="radio-inline-2" type="radio"  name="time" value="no">
-		No
-		</label>
-
-
-		<div class="form-group" style="padding-top:1.5em">
-		<input type="submit" class="button" value="Continue">
+		<div class="form-group">
+			<label class="form-label" for="address-postcode"><h2 class="heading-19">Your driver number</h2></label>
+			<input type="text" class="form-control form-control-1-4" id="address-postcode">
+			<!-- <p class="form-hint">E.g. PR2 8AE or PR28AE</p> -->
 		</div>
-          
-	</fieldset>
 
-	</form>
+
+		<details style="padding-bottom:2em" class="grid grid-2-3">
+		<summary role="button" aria-controls="details-content-0" tabindex="0" aria-expanded="true">
+			<span class="summary">Help finding your driver number</span>
+		</summary>
+		<div class="" id="details-content-0" aria-hidden="false" style="display:block;border-left:none">
+		
+		<P>This is 16 characters long, made up of letters and numbers on the front of the driving licence photocard and the paper counterpart. </P>
+
+		<p><img src="/public/images/photocard-driver-number.png" width="255" height="50"></p>
+			
+		</div>
+		</details>
+
+
+		<div class="form-group">
+		<a href="change-address-1" class="button">Next</a>
+		</div>
+
+		
+
+	</fieldset>
 
 
 

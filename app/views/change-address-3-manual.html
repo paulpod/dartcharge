@@ -69,7 +69,7 @@
   <div id="content">
     <div class="inner-block">
 		
-	<a class="back-to-previous" href="driving-licence-change-address-1">Back <span class="visuallyhidden"> to view driving licence</span></a>
+	<a class="back-to-previous" href="change-address-2">Back <span class="visuallyhidden"> to the previous question</span></a>
 
 		
 	<article>
@@ -124,19 +124,40 @@
 
 
 	<fieldset>
+		
 
-		<div class="form-group">
-			<label class="form-label" for="address-postcode"><h2 class="heading-19">New postcode</h2></label>
-			<input type="text" class="form-control form-control-1-4" id="address-postcode">
-			<!-- <p class="form-hint">E.g. PR2 8AE or PR28AE</p> -->
+		<fieldset class="validate" data-validation-name="addressManual" data-validation-type="fieldset" data-validation-rules="atLeastOneTextEntry atLeastOneValid" data-validation-children="manualAddressMultiline city">
+        
+        <div class="validation-wrapper ">
+            <fieldset class="multi-line-field validate" data-validation-name="manualAddressMultiline" data-validation-type="fieldset" data-validation-rules="atLeastOneNonEmpty" data-validation-children="manualAddressLineOne manualAddressLineTwo manualAddressLineThree">
+                <legend class="label">
+                    <h2 class="heading-19">New address</h2>
+                </legend>
+                <label for="address_manualAddress_lineOne" class="visuallyhidden">Address line one</label>
+                <input type="text" id="address_manualAddress_lineOne" name="address.manualAddress.lineOne" value="" class="text long validate " autocomplete="off" data-validation-name="manualAddressLineOne" data-validation-type="field" data-validation-rules="nonEmpty"><br />
+                <label for="address_manualAddress_lineTwo" class="visuallyhidden">Address line two</label>
+                <input type="text" id="address_manualAddress_lineTwo" name="address.manualAddress.lineTwo" value="" class="text long validate " autocomplete="off" data-validation-name="manualAddressLineTwo" data-validation-type="field" data-validation-rules="nonEmpty"><br />
+                <label for="address_manualAddress_lineThree" class="visuallyhidden">Address line three</label>
+                <input type="text" id="address_manualAddress_lineThree" name="address.manualAddress.lineThree" value="" class="text long validate " autocomplete="off" data-validation-name="manualAddressLineThree" data-validation-type="field" data-validation-rules="nonEmpty"><br />
+            </fieldset>
+        </div>
+        <label for="address_manualAddress_city">Town or city</label>
+        <div class="validation-wrapper ">
+            <input type="text" id="address_manualAddress_city" name="address.manualAddress.city" value="" class="text long validate " autocomplete="off" data-validation-name="city" data-validation-type="field" data-validation-rules="nonEmpty"><br />
+        </div>
+
+        <label for="address_manualAddress_city">Postcode</label>
+
+        <input type="text" class="form-control form-control-1-4" id="address-postcode"><br />
+
+    </fieldset>
+
+
+		<div class="form-group" style="padding-top:2em">
+		<a href="change-address-4" class="button">Continue</a>
 		</div>
 
-
-		<div class="form-group">
-		<a href="change-address-4dl" class="button">Find address</a>
-		</div>
-
-		<p><a href="change-address-3dl-manual">Enter address manually</a></p>
+		<p><a href="change-address-3">Find address using the postcode</a></p>
 
 		<p><a href="#">Use a BFPO address</a></p>
 

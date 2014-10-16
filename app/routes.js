@@ -47,5 +47,22 @@ module.exports = {
 
 
 
+//Change of address routes
+//
+// 1. Time at old addresses >= 3 years?
+    app.get('/change-time', function (req, res) {
+      var a = req.query.time;
+
+      if (a == 'no') {
+        res.render('change-address-2-add', {'assetPath' : assetPath });
+      } else if (a == 'yes') {
+        res.render('change-address-3', {'assetPath' : assetPath });
+      }
+      
+      
+    });
+
+
+
   }
 };
