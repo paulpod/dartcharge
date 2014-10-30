@@ -19,6 +19,16 @@ module.exports = {
       res.render('examples/alpha/alpha', {'assetPath' : assetPath });    
     });
 
+
+
+
+
+    app.get('change-address-3', function (req, res) {
+
+      res.render('change-address-3', {'address' : assetPath });    
+    });
+
+
     
     app.get('/local-type', function (req, res) {
       var o = req.query.Option;

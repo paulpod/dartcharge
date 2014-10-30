@@ -17,6 +17,10 @@ app.use('/public', express.static(__dirname + '/govuk_modules/govuk_template/ass
 
 var assetPath = '/public/';
 
+// ideal postcodes
+var api_key = "uk_i0ze743ex682oUqTLJ1k3TDE2NScc"
+var idealPostcodes = require('ideal-postcodes')(api_key)
+
 routes.bind(app, assetPath);
 
 // auto render any view that exists

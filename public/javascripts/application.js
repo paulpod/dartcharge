@@ -66,3 +66,9 @@ $(document).ready(function() {
   // See /javascripts/vendor/details.polyfill.js
 
 });
+
+
+
+
+
+

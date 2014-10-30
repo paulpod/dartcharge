@@ -1,8 +1,5 @@
-@-ms-viewport {
-  width: device-width; }
-
-@-o-viewport {
-  width: device-width; }
+em.bold {
+  color: green; }
 
 @-ms-viewport {
   width: device-width; }
@@ -10,6 +7,11 @@
 @-o-viewport {
   width: device-width; }
 
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
 
 @font-face {
   font-family: GDS-Logo;
@@ -37,6 +39,11 @@
 @-o-viewport {
   width: device-width; }
 
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
 
 @-ms-viewport {
   width: device-width; }
@@ -44,6 +51,23 @@
 @-o-viewport {
   width: device-width; }
 
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
 
 @-ms-viewport {
   width: device-width; }
@@ -79,7 +103,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, small, strike, strong, sub, sup, tt,
 #content {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
-  line-height: 1.31579;
+  line-height: 1.3157894737;
   font-weight: 400;
   text-transform: none;
   -webkit-font-smoothing: antialiased; }
@@ -88,87 +112,83 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre, small, strike, strong, sub, sup, tt,
       font-size: 16px;
       line-height: 1.25; } }
 
-.heading-48 {
+.heading-xlarge, .heading-48 {
   font-family: "nta", Arial, sans-serif;
   font-size: 48px;
-  line-height: 1.04167;
-  font-weight: 400;
-  text-transform: none;
+  line-height: 1.0416666667;
   font-weight: 700;
+  text-transform: none;
   margin-top: 15px;
   margin-bottom: 30px; }
   @media (max-width: 640px) {
-    .heading-48 {
+    .heading-xlarge, .heading-48 {
       font-size: 32px;
       line-height: 1.09375; } }
   @media (min-width: 641px) {
-    .heading-48 {
+    .heading-xlarge, .heading-48 {
       margin-top: 30px;
       margin-bottom: 60px; } }
-  .heading-48 .heading-27 {
+  .heading-xlarge .heading-27, .heading-48 .heading-27 {
     display: block;
     font-family: "nta", Arial, sans-serif;
     font-size: 27px;
-    line-height: 1.11111;
+    line-height: 1.1111111111;
     font-weight: 400;
     text-transform: none;
     color: #6f777b; }
     @media (max-width: 640px) {
-      .heading-48 .heading-27 {
-        font-size: 18px;
-        line-height: 1.11111; } }
+      .heading-xlarge .heading-27, .heading-48 .heading-27 {
+        font-size: 20px;
+        line-height: 1.1111111111; } }
 
-.heading-36 {
+.heading-large, .heading-36 {
   font-family: "nta", Arial, sans-serif;
   font-size: 36px;
-  line-height: 1.11111;
-  font-weight: 400;
-  text-transform: none;
+  line-height: 1.1111111111;
   font-weight: 700;
+  text-transform: none;
   margin-top: 25px;
   margin-bottom: 10px; }
   @media (max-width: 640px) {
-    .heading-36 {
+    .heading-large, .heading-36 {
       font-size: 24px;
-      line-height: 1.04167; } }
+      line-height: 1.0416666667; } }
   @media (min-width: 641px) {
-    .heading-36 {
+    .heading-large, .heading-36 {
       margin-top: 45px;
       margin-bottom: 20px; } }
 
-.heading-24 {
+.heading-medium, .heading-24 {
   font-family: "nta", Arial, sans-serif;
   font-size: 24px;
   line-height: 1.25;
-  font-weight: 400;
-  text-transform: none;
   font-weight: 700;
+  text-transform: none;
   margin-top: 25px;
   margin-bottom: 10px; }
   @media (max-width: 640px) {
-    .heading-24 {
-      font-size: 20px;
+    .heading-medium, .heading-24 {
+      font-size: 18px;
       line-height: 1.2; } }
   @media (min-width: 641px) {
-    .heading-24 {
+    .heading-medium, .heading-24 {
       margin-top: 45px;
       margin-bottom: 20px; } }
 
-.heading-19 {
+.heading-small, .heading-19 {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
-  line-height: 1.31579;
-  font-weight: 400;
-  text-transform: none;
+  line-height: 1.3157894737;
   font-weight: 700;
+  text-transform: none;
   margin-top: 10px;
   margin-bottom: 5px; }
   @media (max-width: 640px) {
-    .heading-19 {
+    .heading-small, .heading-19 {
       font-size: 16px;
       line-height: 1.25; } }
   @media (min-width: 641px) {
-    .heading-19 {
+    .heading-small, .heading-19 {
       margin-top: 20px; } }
 
 p, pre {
@@ -183,19 +203,19 @@ p, pre {
   text-transform: none; }
   @media (max-width: 640px) {
     .lede, .lead {
-      font-size: 20px;
+      font-size: 18px;
       line-height: 1.2; } }
 
 .copy-16 {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.25;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: none; }
   @media (max-width: 640px) {
     .copy-16 {
       font-size: 14px;
-      line-height: 1.14286; } }
+      line-height: 1.1428571429; } }
 
 .text {
   max-width: 30em; }
@@ -204,21 +224,19 @@ p, pre {
   font-family: "nta", Arial, sans-serif;
   font-size: 80px;
   line-height: 1;
-  font-weight: 400;
-  text-transform: none;
-  font-weight: 700; }
+  font-weight: 700;
+  text-transform: none; }
   @media (max-width: 640px) {
     .data-80 {
       font-size: 53px;
-      line-height: 1.03774; } }
+      line-height: 1.0377358491; } }
 
 .data-48 {
   font-family: "nta", Arial, sans-serif;
   font-size: 48px;
-  line-height: 1.04167;
-  font-weight: 400;
-  text-transform: none;
+  line-height: 1.0416666667;
   font-weight: 700;
+  text-transform: none;
   line-height: 0.9; }
   @media (max-width: 640px) {
     .data-48 {
@@ -229,13 +247,12 @@ p, pre {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.25;
-  font-weight: 300;
-  text-transform: none;
-  font-weight: 700; }
+  font-weight: 700;
+  text-transform: none; }
   @media (max-width: 640px) {
     .data p {
       font-size: 14px;
-      line-height: 1.14286; } }
+      line-height: 1.1428571429; } }
 
 #wrapper {
   text-align: center;
@@ -297,7 +314,7 @@ p, pre {
   width: 100%; }
   @media (min-width: 641px) {
     .grid-1-3 {
-      width: 33.33333%; } }
+      width: 33.333333333%; } }
 
 .grid-1-2 {
   width: 100%; }
@@ -309,7 +326,7 @@ p, pre {
   width: 100%; }
   @media (min-width: 641px) {
     .grid-2-3 {
-      width: 66.66667%; } }
+      width: 66.666666667%; } }
 
 .grid-3-4 {
   width: 100%; }
@@ -340,13 +357,13 @@ fieldset, legend {
 .form-label, .date-of-birth legend {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
-  line-height: 1.31579;
+  line-height: 1.3157894737;
   font-weight: 400;
   text-transform: none;
   display: block;
   margin-bottom: 10px; }
   @media (max-width: 640px) {
-    .form-label {
+    .form-label, .date-of-birth legend {
       font-size: 16px;
       line-height: 1.25; } }
 
@@ -433,12 +450,12 @@ fieldset, legend {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.25;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: none; }
   @media (max-width: 640px) {
     .validation-summary li, .validation-summary p {
       font-size: 14px;
-      line-height: 1.14286; } }
+      line-height: 1.1428571429; } }
 
 .validation-summary p {
   margin-top: 15px;
@@ -470,14 +487,13 @@ fieldset, legend {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.25;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: none;
   color: #df3034; }
   @media (max-width: 640px) {
     .validation-message {
       font-size: 14px;
-      line-height: 1.14286; } }
-
+      line-height: 1.1428571429; } }
 
 .date-of-birth label {
   display: block;
@@ -553,7 +569,7 @@ table th, table td {
   font-family: "nta", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.25;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: none;
   text-align: left;
   color: #0b0c0c;
@@ -563,7 +579,7 @@ table th, table td {
   @media (max-width: 640px) {
     table th, table td {
       font-size: 14px;
-      line-height: 1.14286; } }
+      line-height: 1.1428571429; } }
 
 table th {
   font-weight: 700; }
@@ -577,7 +593,7 @@ table td {
   position: relative;
   display: -moz-inline-stack;
   display: inline-block;
-  padding: 0.35em 0.5em 0.15em 0.5em;
+  padding: 0.3em 0.6em 0.2em 0.6em;
   border: none;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -649,9 +665,8 @@ table td {
   font-family: "nta", Arial, sans-serif;
   font-size: 24px;
   line-height: 1.25;
-  font-weight: 400;
-  text-transform: none;
   font-weight: 700;
+  text-transform: none;
   line-height: 0.66667;
   color: #FFF;
   background-color: #00823b;
@@ -662,7 +677,7 @@ table td {
   margin-bottom: 0; }
   @media (max-width: 640px) {
     .get-started .button {
-      font-size: 20px;
+      font-size: 18px;
       line-height: 1.2; } }
 .get-started .button:hover {
   background-color: #006435; }
@@ -671,7 +686,7 @@ table td {
 .get-started .destination {
   font-family: "nta", Arial, sans-serif;
   font-size: 14px;
-  line-height: 1.42857;
+  line-height: 1.4285714286;
   font-weight: 400;
   text-transform: none;
   color: #2e3133;
@@ -686,7 +701,7 @@ table td {
 .button-link {
   font-family: "nta", Arial, sans-serif;
   font-size: 19px;
-  line-height: 1.31579;
+  line-height: 1.3157894737;
   font-weight: 400;
   text-transform: none;
   background: none;
@@ -746,3 +761,10 @@ ul li, ol li {
 
 .text-secondary {
   color: #6f777b; }
+
+em.highlight {
+  font-style: normal;
+  color: #0076c0; }
+
+.list-bullet {
+  margin-bottom: 45px; }

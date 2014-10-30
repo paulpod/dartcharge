@@ -8,7 +8,7 @@
 }
 
 // Headings 
-.heading-48 {
+.heading-xlarge, .heading-48 {
   @include bold-48();
   margin-top: $gutter-half;
   margin-bottom: $gutter;
@@ -23,7 +23,7 @@
   }
 }
 
-.heading-36 {
+.heading-large, .heading-36 {
   @include bold-36();
   margin-top: 25px;
   margin-bottom: 10px;
@@ -33,7 +33,7 @@
   }
 }
 
-.heading-24 {
+.heading-medium, .heading-24 {
   @include bold-24();
   margin-top: 25px;
   margin-bottom: 10px;
@@ -43,7 +43,7 @@
   }
 }
 
-.heading-19 {
+.heading-small, .heading-19 {
   @include bold-19();
   margin-top: 10px;
   margin-bottom: 5px;
