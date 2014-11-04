@@ -39,6 +39,20 @@ module.exports = {
     });
 
 
+
+app.get('/pick-address', function (req, res) {
+
+  var x = req.query.name;
+
+  res.render('test-response', {'assetPath' : assetPath, 'playback-get' : x})
+
+})
+
+
+
+
+
+
     app.get('/account-type', function (req, res) {
       var o = req.query.Option;
 
